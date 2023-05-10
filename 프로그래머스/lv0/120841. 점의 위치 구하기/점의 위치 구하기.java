@@ -4,8 +4,8 @@ class Solution {
         int zero = 0;
         
         // 좌표(x, y) 가 각각 0보다 크면 +1, 작으면 -1, 같으면 0 을 할당함.
-        int x = (dot[0] > zero) ? 1 : (dot[0] < 0) ? -1 : 0;
-        int y = (dot[1] > zero) ? 1 : (dot[1] < 0) ? -1 : 0;
+        int x = (dot[0] > zero) ? 1 : (dot[0] < zero) ? -1 : 0;
+        int y = (dot[1] > zero) ? 1 : (dot[1] < zero) ? -1 : 0;
         
         
         if(x + y == 2) {            // 둘 다 양수인 경우 1사분면,
