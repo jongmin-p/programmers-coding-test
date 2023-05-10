@@ -1,7 +1,7 @@
 class Solution {
     public int solution(int price) {
         int answer = 0;
-        
+
         if (price >= 500000) {
             answer = (int)(price * 0.8); // 정수 형변환 해줘야 에러 안 뜲.
         } else if (price >= 300000) {
@@ -11,7 +11,7 @@ class Solution {
         } else {
             answer = (int)(price);
         }
-        
+
         return answer;
     }
 }
